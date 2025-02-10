@@ -4,41 +4,38 @@ import React, { useState } from 'react';
 import { BentoGrid, BentoGridItem } from './ui/BentoGrid';
 import { gridItems } from '@/data';
 import axios from 'axios';
-import MagicButton from './ui/MagicButton';
+
+
 
 const Grid = () => {
   const [chatQuery, setChatQuery] = useState('');
   const [chatResponse, setChatResponse] = useState('');
 
   const handleQuerySubmit = async (query: string) => {
-    try {
-      // Sending the request in the same way as the working script
-      console.log('Sending request...');
-      const response = await axios.post('https://portfolio-bot-02-production.up.railway.app/chat', 
-        { question: query }, // Send data with 'question' key
-        {
-          headers: {
-            'Content-Type': 'application/json', // Correct header for sending JSON data
-          },
-        }
-      );
-  
-      // Log the response data for debugging purposes
-      console.log('Response Status:', response.status);
-      console.log('Response Data:', response.data);
-  
-      // Check if the response contains an answer
-      if (response.data && response.data.answer) {
-        setChatResponse(response.data.answer); // Display the answer from the backend
-      } else {
-        setChatResponse('No answer found. Please try again.'); // Default message if no answer is found
-      }
-    } catch (error) {
-      // Handle errors and log detailed messages for debugging
-      setChatResponse('Sorry, there was an error processing your query.');
-    }
+    // Sending the request in the same way as the working script
+    console.log('Sending request...');
     
+    const response = await axios.post('https://portfolio-bot-02-production.up.railway.app/chat', 
+      { question: query }, // Send data with 'question' key
+      {
+        headers: {
+          'Content-Type': 'application/json', // Correct header for sending JSON data
+        },
+      }
+    );
+  
+    // Log the response data for debugging purposes
+    console.log('Response Status:', response.status);
+    console.log('Response Data:', response.data);
+  
+    // Check if the response contains an answer
+    if (response.data && response.data.answer) {
+      setChatResponse(response.data.answer); // Display the answer from the backend
+    } else {
+      setChatResponse('No answer found. Please try again.'); // Default message if no answer is found
+    }
   };
+  
   
   return (
     <section id="about">
