@@ -13,12 +13,12 @@ export const navItems = [
       className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
       imgClassName: "w-full h-full",
       titleClassName: "justify-end",
-      img: "/b1.svg",
+      img: "/b1.png",
       spareImg: "",
     },
     {
       id: 2,
-      title: "",
+      title: "Get to know my experience and skills",
       description: "",
       className: "lg:col-span-2 md:col-span-3 md:row-span-2",
       imgClassName: "",
@@ -28,7 +28,7 @@ export const navItems = [
     },
     {
       id: 3,
-      title: "My tech stack",
+      title: "Skilled in Python, C++, C#, SQL, HTML,  CSS, and PHP",
       description: "",
       className: "lg:col-span-2 md:col-span-3 md:row-span-2",
       imgClassName: "",
@@ -49,12 +49,12 @@ export const navItems = [
   
     {
       id: 5,
-      title: "Now skilled in Python, C++, C#, SQL, HTML,  CSS, and PHP",
-      description: "Kicked off my journey with C",
+      title: "My tech stack",
+      description: "Computer Vision  Chatbot dev  Machine Learning  Deep Learning  Data Analysis Neural Networks NLP",
       className: "md:col-span-3 md:row-span-2",
       imgClassName: "absolute right-0 bottom-0 md:w-86 w-70",
       titleClassName: "justify-center md:justify-start lg:justify-center",
-      img: "/b5.svg",
+      img: "/b5.svg.png",
       spareImg: "/grid.svg",
     },
     {

@@ -7,6 +7,7 @@ import {
   useMotionValue,
   useTransform,
 } from "framer-motion";
+
 import { useRef } from "react";
 import { cn } from "@/utils/cn";
 
@@ -128,17 +129,17 @@ export const MovingBorder = ({
           ref={pathRef}
         />
       </svg>
+     
       <motion.div
-        style={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          display: "inline-block",
-          transform,
-        }}
-      >
-        {children}
-      </motion.div>
+      className={cn(
+        "absolute top-0 left-0 inline-block", // Static styles
+        transform && `transform-${transform}` // Dynamically applied class based on transform
+      )}
+      {...otherProps}
+    >
+      {children}
+    </motion.div>
+      
     </>
   );
 };
