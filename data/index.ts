@@ -28,13 +28,13 @@ export const navItems = [
     },
     {
       id: 3,
-      title: "Skilled in Python, C++, C#, SQL, HTML,  CSS, and PHP",
+      title: "Master's in AI and Applied Data Science",
       description: "",
       className: "lg:col-span-2 md:col-span-3 md:row-span-2",
       imgClassName: "",
       titleClassName: "justify-center",
-      img: "",
-      spareImg: "",
+      img: "/grid.svg",
+      spareImg: "/b4.svg",
     },
     {
       id: 4,
@@ -148,13 +148,20 @@ export const navItems = [
   export const workExperience = [
     {
       id: 1,
+      title: "AI Innovations Analyst",
+      desc: "Built API-based workflows to sync client/policy data across insurance systems and partner platforms, set up webhook automations to capture quote/lead requests and route them to the right team/CRM stage, created an AI-assisted Outlook auto-reply for Hub Group compliance/quote inquiries using approved templates,  automated renewal outreach based on policy dates.",
+      className: "md:col-span-2",
+      thumbnail: "/exp3.svg",
+    },
+    {
+      id: 2,
       title: "AI Solutions Engineer - Imperium Dynamics",
       desc: "Focused on implementing conversational AI solutions using Azure OpenAI models and AI Studio, integrating tools for query handling, document analysis, and image search. Developed AI-powered bots and researched emerging technologies for innovation.",
       className: "md:col-span-2",
       thumbnail: "/exp1.svg",
     },
     {
-      id: 2,
+      id: 3,
       title: "Associate Consultant in Data & AI - TheCoded",
       desc: "Worked on developing a chatbot for medical use cases and conducted research for Microsoft Copilot.",
       className: "md:col-span-2", // change to md:col-span-2
